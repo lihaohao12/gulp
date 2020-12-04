@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登录</title>
+    <link rel="stylesheet" href="css/denglu.css" />
+    <link rel="stylesheet" href="iconfont/iconfont.css" />
+</head>
+
+<body>
+    <div id="denglu">
+        <!-- 第一部分#head -->
+        <div id="head">
+            <div class="head-one">
+                <div class="head-two"></div>
+                <div class="head-three">
+                    <span>欢迎登录</span>
+                </div>
+                <div class="head-four">
+                    <i class="iconfont icon-duanxin"></i><span>登录界面,调查问卷</span>
+                </div>
+            </div>
+        </div>
+        <!-- 第二部分#cont -->
+        <div id="cont">
+            <div class="cont-one">
+                <p>
+                    依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！新版《京东隐私政策》已上线，将更有利于保护您的个人隐私。
+                </p>
+            </div>
+        </div>
+        <!-- 第三部分#min -->
+        <div id="min">
+            <div class="min-one">
+                <div class="min-two">
+                    <div class="min-three">
+                        <p>京东不会以任何理由要求您转账汇款，谨防诈骗。</p>
+                    </div>
+                    <div class="min-four">
+                        <span><a href=""> 扫码登录</a></span>
+                        <p><a href="">账户登录</a></p>
+                    </div>
+                    <div class="min-five">
+                        <div class="min-six">
+                            <span></span>
+                            <input type="text" placeholder="邮箱/用户名/登录手机" id="username" />
+                        </div>
+                        <div class="min-seven">
+                            <span></span>
+                            <input type="password" placeholder="密码" id="password" />
+                        </div>
+                        <p>忘记密码</p>
+                        <input type="button" value="登&nbsp;&nbsp;&nbsp;&nbsp;录" id="btn2" />
+                    </div>
+                    <div class="min-eight">
+                        <i class="iconfont icon-QQ"></i>
+                        <span>QQ</span>
+                        <span>|</span>
+                        <i class="iconfont icon-weixin1"></i>
+                        <span>微信</span>
+                        <i class="iconfont icon-mianxing"></i>
+                        <span><a href="./zhuce.html">立即注册</a> </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 第四部分#foo -->
+        <div id="foo">
+            <div class="foo-one">
+                <a href=> 关于我们</a>|
+                <a href="#">联系我们</a>|
+                <a href="#">人才招聘</a>|
+                <a href="#">商家入驻</a>|
+                <a href="#">广告服务</a>|
+                <a href="#">手机京东</a>|
+                <a href="#">友情链接</a>|
+                <a href="#">销售联盟</a>|
+                <a href="#">京东社区</a>|
+                <a href="#">京东公益</a>|
+                <a href="#">English Site</a>
+            </div>
+            <div class="foo-two">
+                <span> Copyright&copy;2004-2020&nbsp;&nbsp;京东JD.com&nbsp;版权所有</span>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery1.11.js"></script>
+    <script>
+        $("#btn2").click(function() {
+            $.ajax({
+                type: "get",
+                url: "http://jx.xuzhixiang.top/ap/api/login.php",
+                data: {
+                    username: $("#username").val(),
+                    password: $("#password").val()
+                },
+                dataType: "json",
+                success: function(response) {
+                    if (response.code == 1) {
+                        alert("登录成功")
+                        window.location.href = "./index.html";
+                    } else {
+                        alert("登陆失败")
+                    }
+                },
+            });
+        })
+    </script>
+</body>
+
+</html>

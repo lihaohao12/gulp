@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#head,
+#cont,
+#min,
+#foo {
+    margin: 0 auto;
+}
+
+//第一部分#head
+#head {
+    width: 990px;
+    .head-one {
+        width: 990px;
+        height: 110px;
+        margin: 0 auto;
+        .head-two {
+            float: left;
+            width: 160px;
+            height: 50px;
+            margin-top: 24px;
+            background: url(//misc.360buyimg.com/user/reg/3.0.0/css/i/icon.png) no-repeat
+        }
+        .head-three {
+            float: left;
+            margin-top: 34px;
+            width: 96px;
+            height: 34px;
+            span {
+                height: 34px;
+                line-height: 34px;
+                font-size: 24px;
+                color: #333;
+                margin-top: 34px;
+            }
+        }
+        .head-four {
+            float: right;
+            width: 144px;
+            height: 20px;
+            margin-top: 55px;
+            color: #999;
+            font-size: 12px;
+            span {
+                margin-left: 10px;
+                a {
+                    color: #e22;
+                }
+            }
+        }
+    }
+}
+
+//第二部分#cont
+#cont {
+    background: #fff8f0;
+    .cont-one {
+        width: 990px;
+        height: 39px;
+        text-align: center;
+        margin: 0 auto;
+        p {
+            width: 785px;
+            height: 19px;
+            color: #999;
+            font-size: 12px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    }
+}
+
+//第三部分#min
+#min {
+    background-color: #9bd9fa;
+    .min-one {
+        width: 990px;
+        height: 475px;
+        background: url(../img/1.jpg);
+        margin: 0 auto;
+        .min-two {
+            width: 346px;
+            margin-top: 10px;
+            background: #fff;
+            z-index: 3;
+            float: right;
+            .min-three {
+                background-color: #fff8f0;
+                width: 346px;
+                height: 40px;
+                p {
+                    width: 311px;
+                    line-height: 40px;
+                    font-size: 12px;
+                    text-align: center;
+                    color: #999;
+                }
+            }
+            .min-four {
+                width: 346px;
+                height: 55px;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #ccc;
+                span {
+                    display: inline-block;
+                    width: 174px;
+                    line-height: 55px;
+                    font-size: 18px;
+                    color: #666;
+                    text-align: center;
+                    border-right: 1px solid #ccc;
+                    ;
+                    a {
+                        color: #666;
+                    }
+                    a:hover {
+                        color: #e4393c;
+                        font-weight: 700;
+                    }
+                }
+                p {
+                    display: inline-block;
+                    width: 174px;
+                    line-height: 55px;
+                    font-size: 18px;
+                    text-align: center;
+                    a {
+                        color: #666;
+                    }
+                    a:hover {
+                        color: #e4393c;
+                        font-weight: 700;
+                    }
+                }
+            }
+            .min-five {
+                width: 304px;
+                height: 255px;
+                border-bottom: 1px solid #bdbdbd;
+                margin-left: 20px;
+                .min-six {
+                    width: 304px;
+                    height: 61px;
+                    span {
+                        position: absolute;
+                        z-index: 3;
+                        width: 38px;
+                        height: 38px;
+                        margin-top: 23px;
+                        border: 1px solid #bdbdbd;
+                        background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2018-0827/i/pwd-icons-new.png) no-repeat;
+                    }
+                    input {
+                        width: 260px;
+                        height: 38px;
+                        margin-top: 23px;
+                        margin-left: 38px;
+                        border: 1px solid #bdbdbd;
+                    }
+                }
+                .min-seven {
+                    width: 304px;
+                    height: 40px;
+                    margin-top: 38px;
+                    span {
+                        position: absolute;
+                        background-position: -48px 0;
+                        z-index: 3;
+                        width: 38px;
+                        height: 38px;
+                        border: 1px solid #bdbdbd;
+                        background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2018-0827/i/pwd-icons-new.png) no-repeat;
+                    }
+                    input {
+                        width: 260px;
+                        height: 38px;
+                        margin-left: 38px;
+                        border: 1px solid #bdbdbd;
+                    }
+                }
+                p {
+                    display: block;
+                    width: 306px;
+                    height: 17px;
+                    font-size: 12px;
+                    color: #666;
+                    text-align: right;
+                    margin: 20px 0;
+                }
+                #btn2 {
+                    border: 1px solid #e85356;
+                    display: block;
+                    width: 302px;
+                    background: #e4393c;
+                    height: 31px;
+                    line-height: 31px;
+                    color: #fff;
+                    font-size: 20px;
+                }
+            }
+            .min-eight {
+                width: 306px;
+                height: 50px;
+                margin: 0 auto;
+                i {
+                    line-height: 55px;
+                    float: left;
+                }
+                i:nth-child(6) {
+                    float: left;
+                    margin-left: 115px;
+                }
+                span {
+                    float: left;
+                    line-height: 50px;
+                    margin: 0 5px;
+                    font-size: 12px;
+                    color: #666;
+                }
+                span:nth-child(7) {
+                    float: right;
+                    a {
+                        font-size: 14px;
+                        color: #b61d1d;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//第四部分#foo
+#foo {
+    width: 990px;
+    .foo-one {
+        width: 990px;
+        height: 65px;
+        text-align: center;
+        border-top: 1px solid #ccc;
+        a {
+            color: #999;
+            margin: 0 10px;
+            font-size: 12px;
+            line-height: 65px;
+        }
+    }
+    .foo-two {
+        width: 990px;
+        height: 40px;
+        margin: 0 auto;
+        text-align: center;
+        span {
+            color: #999;
+            font-size: 12px;
+        }
+    }
+}
