@@ -319,7 +319,7 @@ body {
                         position: absolute;
                         width: 590px;
                         height: 470px;
-                        top: 252px;
+                        top: 262px;
                         left: 362px;
                         z-index: 3;
                         display: none;
@@ -376,13 +376,42 @@ body {
             .con-three {
                 width: 190px;
                 height: 470px;
-                border: 1px solid black;
+            }
+            .swiper-container {
+                width: 100%;
+                height: 100%;
+            }
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+            }
+            .first {
+                width: 190px;
+                height: 470px;
+                img {
+                    margin-bottom: 5px;
+                    width: 190px;
+                    height: 150px;
+                }
             }
             .con-four {
                 width: 190px;
                 height: 470px;
                 background-color: #fff;
-                border: 1px solid black;
                 .con-five {
                     width: 190px;
                     height: 102px;
@@ -714,6 +743,32 @@ body {
                 }
             }
         }
+        .louti {
+            width: 50px;
+            height: 300px;
+            position: absolute;
+            right: 60px;
+            top: 0;
+            display: none;
+            li {
+                width: 50px;
+                height: 60px;
+                float: left;
+                border: 1px solid black;
+                background-color: #fff;
+                span {
+                    display: block;
+                    width: 30px;
+                    height: 40px;
+                    margin: 10px;
+                    font-size: 14px;
+                }
+            }
+            li:hover {
+                background-color: #de452b;
+                color: #fff;
+            }
+        }
     }
     //第六部分#server
     #server {
@@ -1012,191 +1067,669 @@ body {
             .moon-two {
                 width: 290px;
                 height: 305px;
-                background: #ffffff;
+                background: #fff;
                 h2 {
                     line-height: 60px;
                     padding: 0 20px;
                 }
             }
-        }
-    }
-    .moon-three {
-        width: 290px;
-        height: 305px;
-        background-color: #fff;
-        h2 {
-            line-height: 60px;
-            padding: 0 20px;
-        }
-        ul {
-            width: 290px;
-            height: 30px;
-            li {
-                width: 60px;
-                height: 26px;
-                margin-left: 5px;
-                float: left;
-                a {
-                    display: block;
-                    color: #999;
-                    font-size: 12px;
-                    background-color: #f6f6f6;
-                    height: 20px;
-                    line-height: 20px;
-                    margin: 0 4px;
-                    width: 60px;
-                    text-align: center;
-                    border-radius: 12px;
-                }
-                a:hover {
-                    color: #ffffff;
-                    background-color: #e2231a;
-                }
+            .swiper-container {
+                width: 100%;
+                height: 240px;
             }
-        }
-        img {
-            width: 60px;
-            height: 60px;
-            float: left;
-            margin-left: 30px;
-            margin-top: 10px;
-        }
-        span:hover {
-            color: #e2231a;
-        }
-        span {
-            display: block;
-            float: left;
-            margin-top: 20px;
-            margin-left: 20px;
-            width: 140px;
-            font-size: 14px;
-            height: 50px;
-        }
-    }
-    .moon-four {
-        width: 290px;
-        height: 305px;
-        background-color: #fff;
-        h2 {
-            line-height: 60px;
-            padding: 0 20px;
-        }
-        .moon-four-one {
-            width: 260px;
-            height: 113px;
-            background-color: #ebf6f4;
-            margin-left: 10px;
-            margin-bottom: 10px;
-            .moon-four-two {
-                width: 120px;
-                height: 75px;
-                margin-left: 20px;
-                padding-top: 20px;
-                float: left;
-                p {
-                    width: 120px;
-                    font-size: 12px;
-                    color: #333;
-                }
-                p:nth-child(2) {
-                    font-size: 12px;
-                    width: 25px;
-                    height: 18px;
-                    color: #e2231a;
-                    float: left;
-                    border-radius: 2px;
-                    margin-top: 2px;
-                    border: 1px solid #e2231a;
-                }
-                span {
-                    display: inline-block;
-                    border: 1px solid #596fab;
-                    color: #596fab;
-                    font-size: 12px;
-                    border-radius: 2px;
-                    height: 17px;
-                    width: 54px;
-                    margin-left: 3px;
-                }
-                p:nth-child(4) {
-                    color: #999;
-                    margin-top: 10px;
-                    font-size: 12px;
-                    bottom: 15px;
-                }
-                p:hover {
-                    color: #e2231a;
-                }
-            }
-            .moon-four-three {
-                width: 75px;
-                height: 75px;
-                float: right;
-                margin: 20px 20px 20px 0;
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+                transition: 300ms;
+                transform: scale(0.8);
                 img {
+                    width: 130px;
+                    height: 130px;
+                }
+            }
+            .swiper-slide-active,
+            .swiper-slide-duplicate-active {
+                transform: scale(1);
+            }
+        }
+        .moon-three {
+            width: 290px;
+            height: 305px;
+            background-color: #fff;
+            h2 {
+                line-height: 60px;
+                padding: 0 20px;
+            }
+            ul {
+                width: 290px;
+                height: 30px;
+                li {
+                    width: 60px;
+                    height: 26px;
+                    margin-left: 5px;
+                    float: left;
+                    a {
+                        display: block;
+                        color: #999;
+                        font-size: 12px;
+                        background-color: #f6f6f6;
+                        height: 20px;
+                        line-height: 20px;
+                        margin: 0 4px;
+                        width: 60px;
+                        text-align: center;
+                        border-radius: 12px;
+                    }
+                    a:hover {
+                        color: #ffffff;
+                        background-color: #e2231a;
+                    }
+                }
+            }
+            img {
+                width: 60px;
+                height: 60px;
+                float: left;
+                margin-left: 30px;
+                margin-top: 10px;
+            }
+            span:hover {
+                color: #e2231a;
+            }
+            span {
+                display: block;
+                float: left;
+                margin-top: 20px;
+                margin-left: 20px;
+                width: 140px;
+                font-size: 14px;
+                height: 50px;
+            }
+        }
+        .moon-four {
+            width: 290px;
+            height: 305px;
+            background-color: #fff;
+            h2 {
+                line-height: 60px;
+                padding: 0 20px;
+            }
+            .moon-four-one {
+                width: 260px;
+                height: 113px;
+                background-color: #ebf6f4;
+                margin-left: 10px;
+                margin-bottom: 10px;
+                .moon-four-two {
+                    width: 120px;
+                    height: 75px;
+                    margin-left: 20px;
+                    padding-top: 20px;
+                    float: left;
+                    p {
+                        width: 120px;
+                        font-size: 12px;
+                        color: #333;
+                    }
+                    p:nth-child(2) {
+                        font-size: 12px;
+                        width: 25px;
+                        height: 18px;
+                        color: #e2231a;
+                        float: left;
+                        border-radius: 2px;
+                        margin-top: 2px;
+                        border: 1px solid #e2231a;
+                    }
+                    span {
+                        display: inline-block;
+                        border: 1px solid #596fab;
+                        color: #596fab;
+                        font-size: 12px;
+                        border-radius: 2px;
+                        height: 17px;
+                        width: 54px;
+                        margin-left: 3px;
+                    }
+                    p:nth-child(4) {
+                        color: #999;
+                        margin-top: 10px;
+                        font-size: 12px;
+                        bottom: 15px;
+                    }
+                    p:hover {
+                        color: #e2231a;
+                    }
+                }
+                .moon-four-three {
                     width: 75px;
                     height: 75px;
+                    float: right;
+                    margin: 20px 20px 20px 0;
+                    img {
+                        width: 75px;
+                        height: 75px;
+                    }
+                }
+            }
+        }
+        .moon-five {
+            width: 290px;
+            height: 305px;
+            background-color: #fff;
+            h2 {
+                line-height: 60px;
+                padding: 0 20px;
+            }
+            .moon-five-one {
+                width: 290px;
+                height: 245px;
+                background-image: url(../img/611.png);
+                .moon-five-two {
+                    width: 260px;
+                    height: 82px;
+                    margin-left: 10px;
+                    .moon-five-six {
+                        width: 164px;
+                        height: 72px;
+                        float: left;
+                        span {
+                            width: 164px;
+                            float: left;
+                            margin-left: 60px;
+                        }
+                        span:nth-child(1) {
+                            color: #e33333;
+                            line-height: 24px;
+                            font-family: impact, sans-serif;
+                            font-size: 28px;
+                            margin-top: 5px;
+                            margin-top: 10px;
+                        }
+                        span:nth-child(2) {
+                            font-size: 12px;
+                            line-height: 18px;
+                            height: 18px;
+                            color: #999;
+                        }
+                        span:nth-child(3) {
+                            font-size: 12px;
+                            line-height: 18px;
+                            height: 18px;
+                            color: #333;
+                            margin-top: 5px;
+                            ;
+                        }
+                    }
+                    .moon-five-seven {
+                        float: right;
+                        width: 20px;
+                        height: 15px;
+                        color: #666;
+                        font-size: 14px;
+                        .moon-five-seven:hover {
+                            color: #e1251b
+                        }
+                    }
                 }
             }
         }
     }
-    .moon-five {
-        width: 290px;
-        height: 305px;
-        background-color: #fff;
-        h2 {
-            line-height: 60px;
-            padding: 0 20px;
+    //  第九部分#boom
+    #boom {
+        height: 65px;
+        background-color: #f4f4f4;
+        .boom-one {
+            width: 1190px;
+            height: 45px;
+            margin: 0 auto;
+            h3 {
+                width: 150px;
+                height: 45px;
+                font-size: 28px;
+                font-weight: 700;
+                text-align: center;
+                line-height: 45px;
+                padding: 0 30px;
+                margin: 0 auto 20px;
+                color: #333;
+            }
         }
-        .moon-five-one {
-            width: 290px;
-            height: 245px;
-            background-image: url(../img/611.png);
-            .moon-five-two {
-                width: 260px;
-                height: 82px;
-                margin-left: 10px;
-                .moon-five-six {
-                    width: 164px;
-                    height: 72px;
-                    float: left;
-                    span {
-                        width: 164px;
-                        float: left;
-                        margin-left: 60px;
+    }
+    // 第十部分#code
+    #code {
+        height: 950px;
+        margin-bottom: 20px;
+        .code-one {
+            width: 1190px;
+            height: 950px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            .code-two {
+                width: 290px;
+                height: 370px;
+                img {
+                    width: 290px;
+                    height: 370px;
+                }
+                .code-three {
+                    margin-bottom: 5px;
+                    .code-four {
+                        width: 250px;
+                        height: 60px;
+                        margin-left: 20px;
+                        span {
+                            font-size: 22px;
+                            font-weight: 700;
+                            line-height: 60px;
+                            color: #333;
+                        }
+                        p {
+                            display: inline-block;
+                            font-size: 14px;
+                            color: #999;
+                            margin-left: 5px;
+                        }
                     }
-                    span:nth-child(1) {
-                        color: #e33333;
-                        line-height: 24px;
-                        font-family: impact, sans-serif;
-                        font-size: 28px;
-                        margin-top: 5px;
-                        margin-top: 10px;
-                    }
-                    span:nth-child(2) {
-                        font-size: 12px;
-                        line-height: 18px;
-                        height: 18px;
-                        color: #999;
-                    }
-                    span:nth-child(3) {
-                        font-size: 12px;
-                        line-height: 18px;
-                        height: 18px;
-                        color: #333;
-                        margin-top: 5px;
-                        ;
+                    .code-five {
+                        width: 290px;
+                        height: 100px;
+                        display: flex;
+                        justify-content: space-around;
+                        img {
+                            width: 100px;
+                            height: 100px;
+                        }
                     }
                 }
-                .moon-five-seven {
-                    float: right;
-                    width: 20px;
-                    height: 15px;
-                    color: #666;
-                    font-size: 14px;
-                    .moon-five-seven:hover {
-                        color: #e1251b
+            }
+            .code-three {
+                width: 290px;
+                height: 180px;
+                background-color: #fff;
+                .code-four {
+                    width: 250px;
+                    height: 60px;
+                    margin-left: 20px;
+                    span {
+                        font-size: 22px;
+                        font-weight: 700;
+                        line-height: 60px;
+                        color: #333;
+                    }
+                    p {
+                        display: inline-block;
+                        font-size: 14px;
+                        color: #999;
+                        margin-left: 5px;
+                    }
+                }
+                .code-five {
+                    width: 290px;
+                    height: 100px;
+                    display: flex;
+                    justify-content: space-around;
+                    img {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+    //第十一部分
+    #hate {
+        height: 65px;
+        background-color: #f4f4f4;
+        .hate-one {
+            width: 1190px;
+            height: 45px;
+            margin: 0 auto;
+            h3 {
+                width: 150px;
+                height: 45px;
+                font-size: 28px;
+                font-weight: 700;
+                text-align: center;
+                line-height: 45px;
+                padding: 0 30px;
+                margin: 0 auto 20px;
+                color: #333;
+            }
+        }
+    }
+    //第十二部分#idea
+    #idea {
+        height: 60px;
+        margin-bottom: 10px;
+        .idea-one {
+            width: 1190px;
+            height: 60px;
+            background: #ffffff;
+            margin: 0 auto;
+            ul {
+                width: 1190px;
+                height: 60px;
+                li {
+                    width: 180px;
+                    height: 60px;
+                    float: left;
+                    margin-left: 10px;
+                    text-align: center;
+                    line-height: 30px;
+                    span {
+                        color: #333;
+                        width: 150px;
+                        margin-top: 7px;
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 27px;
+                    }
+                    p {
+                        color: #999;
+                        font-size: 14px;
+                    }
+                }
+                li:hover span {
+                    color: #e1251b;
+                }
+                li:hover p {
+                    color: #e1251b;
+                }
+            }
+        }
+    }
+    //  第十三部分#deet
+    #deet {
+        height: 654px;
+        .deet-one {
+            width: 1190px;
+            height: 654px;
+            margin: 0 auto;
+            display: flex;
+            border: 1px solid black;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .deet-two {
+            width: 230px;
+            height: 322px;
+            border: 1px solid black;
+            background-color: #fff;
+            img {
+                width: 150px;
+                height: 150px;
+                margin: 40px;
+            }
+            p {
+                font-size: 12px;
+                margin-left: 20px;
+                width: 190px;
+                height: 48px;
+                color: #666;
+            }
+            span {
+                display: block;
+                width: 190px;
+                font-size: 16px;
+                font-weight: 700;
+                color: #e1251b;
+                line-height: 16px;
+                margin: 10px 0 10px 20px;
+            }
+        }
+        strong {
+            display: block;
+            width: 190px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: red;
+        }
+    }
+    //  第十四部分#pass
+    #pass {
+        height: 103px;
+        .pass-one {
+            width: 1190px;
+            height: 103px;
+            margin: 0 auto;
+            border-bottom: 1px solid #cecece;
+            .pass-three {
+                display: block;
+                display: flex;
+                justify-content: space-around;
+                li {
+                    width: 225px;
+                    line-height: 42px;
+                    margin: 30px 0;
+                    text-align: center;
+                    span {
+                        width: 100%;
+                        height: 42px;
+                        line-height: 42px;
+                        font-size: 18px;
+                        font-weight: 700;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        color: #444;
+                    }
+                }
+            }
+        }
+    }
+    //  第十五部分#gate
+    #gate {
+        height: 200px;
+        border-top: 1px solid #ccc;
+        .gate-one {
+            width: 1190px;
+            height: 200px;
+            margin: 0 auto;
+            .gate-two {
+                width: 1190px;
+                height: 160px;
+                margin: 20px auto;
+                .gate-three {
+                    width: 198px;
+                    height: 154px;
+                    float: left;
+                    span {
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                        color: #666;
+                        font-weight: 600;
+                    }
+                    li {
+                        margin-top: 2px;
+                        a {
+                            font-size: 12px;
+                            color: #666;
+                        }
+                        a:hover {
+                            color: #e1251b;
+                        }
+                    }
+                }
+                .gate-four {
+                    width: 198px;
+                    height: 133px;
+                    float: left;
+                    span {
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                        color: #666;
+                        font-weight: 600;
+                    }
+                    li {
+                        margin-top: 2px;
+                        a {
+                            font-size: 12px;
+                            color: #666;
+                        }
+                        a:hover {
+                            color: #e1251b;
+                        }
+                    }
+                }
+                .gate-five {
+                    width: 198px;
+                    height: 85px;
+                    float: left;
+                    span {
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                        color: #666;
+                        font-weight: 600;
+                    }
+                    li {
+                        margin-top: 2px;
+                        a {
+                            font-size: 12px;
+                            color: #666;
+                        }
+                        a:hover {
+                            color: #e1251b;
+                        }
+                    }
+                }
+                .gate-six {
+                    width: 198px;
+                    height: 154px;
+                    float: left;
+                    span {
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                        color: #666;
+                        font-weight: 600;
+                    }
+                    li {
+                        margin-top: 2px;
+                        a {
+                            font-size: 12px;
+                            color: #666;
+                        }
+                        a:hover {
+                            color: #e1251b;
+                        }
+                    }
+                }
+                .gate-seven {
+                    width: 198px;
+                    height: 133px;
+                    float: left;
+                    span {
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                        color: #666;
+                        font-weight: 600;
+                    }
+                    li {
+                        margin-top: 2px;
+                        a {
+                            font-size: 12px;
+                            color: #666;
+                        }
+                        a:hover {
+                            color: #e1251b;
+                        }
+                    }
+                }
+                .gate-eight {
+                    width: 200px;
+                    height: 70px;
+                    float: left;
+                    span {
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                        color: #333;
+                        font-weight: 700;
+                    }
+                    p {
+                        font-size: 12px;
+                        color: #666;
+                        margin-top: 15px;
+                    }
+                    a {
+                        display: block;
+                        color: #666;
+                        font-size: 12px;
+                        float: right;
+                    }
+                    a:hover {
+                        color: #e1251b;
+                    }
+                }
+            }
+        }
+    }
+    //  第十六部分#just
+    #just {
+        height: 261px;
+        .just-one {
+            width: 1190px;
+            height: 105px;
+            margin: 0 auto;
+            border-top: 1px solid #ccc;
+            ul {
+                width: 990px;
+                height: 17px;
+                margin: 10px 100px;
+                li {
+                    float: left;
+                    width: 65px;
+                    text-align: center;
+                    border-right: 1px solid #ccc;
+                    a {
+                        display: block;
+                        margin-left: 10px;
+                        width: 48px;
+                        height: 16px;
+                        color: #666;
+                        font-size: 12px;
+                    }
+                    a:hover {
+                        color: #e1251b;
+                    }
+                }
+                li:nth-last-child(1) {
+                    border: 0;
+                }
+            }
+            .just-two {
+                width: 1190px;
+                height: 64px;
+                p {
+                    text-align: center;
+                    span {
+                        color: #999;
+                        font-size: 12px;
+                        margin-left: 10px;
+                        a {
+                            font-size: 12px;
+                            color: #999;
+                        }
+                        a:hover {
+                            color: #e1251b;
+                        }
                     }
                 }
             }
