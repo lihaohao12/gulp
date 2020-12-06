@@ -12,9 +12,19 @@
     <div id="foyt">
         <!-- 第一部分左边 -->
         <div class="foyt-one">
-            <div class="foyt-one-one">
-                <img src="./img/foot1.png" alt="" />
+            <div id="zoomBox">
+                <div id="midArea">
+                    <img src="img/foot1.png" />
+                    <div id="zoom"></div>
+                </div>
+                <div id="bigArea">
+                    <img src="img/foot1.png" />
+                </div>
             </div>
+            <!-- <div class="foyt-one-one">
+                <img src="./img/foot1.png" alt="" />
+            </div> -->
+
             <div class="foyt-one-two">
                 <img src="./img/foot2.png" alt="" />
                 <img src="./img/foot3.png" alt="" />
@@ -34,14 +44,14 @@
             </span>
                 </div>
                 <div class="foyt-two-b">
-                    <span>【新品，全金属窄边框】学生网课办公娱乐，全新11代酷睿，MX450独显，全金属100%sRGB高色域，指纹背光,快充(更多尖货)查看></span>
-                </div>
-            </div>
-            <!-- 右边第二个div-->
-            <div class="foyt-two-two">
-
-                <div class="foyt-two-two-c">
-                    <span>京 东 价</span>
+                    <span>【新品，全金属窄边框】学生网课办公娱乐，全新11代酷睿，MX450独显，全金属100%sRGB高色域，指纹背光,快充(更多尖货)查看></span
+            >
+          </div>
+        </div>
+        <!-- 右边第二个div-->
+        <div class="foyt-two-two">
+          <div class="foyt-two-two-c">
+            <span>京 东 价</span>
                     <span>￥5299.00</span>
                     <span>预售说明</span>
                     <span>累计评价15.1万+</span>
@@ -57,13 +67,14 @@
                     <span>促 销</span>
                     <span>满额返券</span>
 
-                    <span>购母购母婴、玩具、清洁、个护、厨具、生鲜、食品、宠物、酒水、家电、电脑数码部分自营商品满1元返券包</span>
-                </div>
-            </div>
-            <!-- 右边第三个div-->
-            <div class="foyt-two-three">
-                <div class="foyt-two-three-a">
-                    <span>配 送 至</span>
+                    <span>购母购母婴、玩具、清洁、个护、厨具、生鲜、食品、宠物、酒水、家电、电脑数码部分自营商品满1元返券包</span
+            >
+          </div>
+        </div>
+        <!-- 右边第三个div-->
+        <div class="foyt-two-three">
+          <div class="foyt-two-three-a">
+            <span>配 送 至</span>
                     <input type="text" placeholder="河南郑州市高新区枫杨街道" id="" />
                     <span>有货</span>
                     <span>支持</span>
@@ -88,22 +99,77 @@
                 </div>
                 <div class="foyt-five">
                     <div class="foyt-six">
-                        <img src="./img/foot1.png" alt="">
-                        <img src="./img/foot1.png" alt="">
-                        <img src="./img/foot1.png" alt="">
-                        <img src="./img/foot1.png" alt="">
-                        <img src="./img/foot1.png" alt="">
-                        <img src="./img/foot1.png" alt="">
+                        <img src="./img/foot1.png" alt="" />
+                        <img src="./img/foot1.png" alt="" />
+                        <img src="./img/foot1.png" alt="" />
+                        <img src="./img/foot1.png" alt="" />
+                        <img src="./img/foot1.png" alt="" />
+                        <img src="./img/foot1.png" alt="" />
                     </div>
-                    <div class="foyt-seven"><span>-</span>
-                        <input type="text" name="" id="#txt">
+                    <div class="foyt-seven">
+                        <span>-</span>
+                        <input type="text" name="" id="#txt" />
                         <span>+</span>
-                        <input type="button" value="加入购物车" id="btn">
+                        <input type="button" value="加入购物车" id="btn" />
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
+    <script>
+        function $(id) {
+            return document.getElementById(id);
+        }
+
+        function Zoom() {
+            this.zoomBox = $("zoomBox");
+            this.midArea = $("midArea");
+            this.midImg = this.midArea.children[0];
+            this.zoom = $("zoom");
+            this.bigArea = $("bigArea");
+            this.bigImg = this.bigArea.children[0];
+        }
+        Zoom.prototype.start = function() {
+            this.midArea.onmouseover = () => {
+                this.zoom.style.display = "block";
+                this.bigArea.style.display = "block";
+            };
+            this.midArea.onmouseout = () => {
+                this.zoom.style.display = "none";
+                this.bigArea.style.display = "none";
+            };
+            this.midArea.onmousemove = (e) => {
+                let evt = e || event;
+                let x = evt.pageX - this.zoomBox.offsetLeft;
+                let y = evt.pageY - this.zoomBox.offsetTop;
+
+                let l = x - this.zoom.offsetWidth / 2;
+                let t = y - this.zoom.offsetHeight / 2;
+
+                let mw = this.zoomBox.offsetWidth - this.zoom.offsetWidth;
+                let mh = this.zoomBox.offsetHeight - this.zoom.offsetHeight;
+
+                l = l <= 0 ? 0 : l >= mw ? mw : l;
+                t = t <= 0 ? 0 : t >= mh ? mh : t;
+
+                this.zoom.style.left = l + "px";
+                this.zoom.style.top = t + "px";
+
+                this.bigImg.style.left =
+                    (-this.zoom.offsetLeft * this.bigImg.offsetWidth) /
+                    this.midImg.offsetWidth +
+                    "px";
+                this.bigImg.style.top =
+                    (-this.zoom.offsetTop * this.bigImg.offsetHeight) /
+                    this.midImg.offsetHeight +
+                    "px";
+            };
+        };
+
+        let zoom = new Zoom();
+        zoom.start();
+    </script>
 </body>
 
 </html>

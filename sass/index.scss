@@ -748,13 +748,13 @@ body {
             height: 300px;
             position: absolute;
             right: 60px;
-            top: 0;
-            display: none;
+            top: 150px;
+            position: fixed;
             li {
                 width: 50px;
                 height: 60px;
                 float: left;
-                border: 1px solid black;
+                border: 1px solid #999;
                 background-color: #fff;
                 span {
                     display: block;

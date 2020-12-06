@@ -23,7 +23,7 @@
                 <i class="iconfont icon-dizhi"></i>
                 <span>河南</span>
                 <ul>
-                    <li><a href="denglu.html">你好,请登录 </a></li>
+                    <li><a href="denglu.html" id="denglu">你好,请登录 </a></li>
                     <li><a href="zhuce.html">免费注册</a><span>|</span></li>
                     <li><a href="">我的订单</a><span>|</span></li>
                     <li class="caidan">
@@ -1356,7 +1356,6 @@
             var sum = setInterval(getli, 300);
         </script>
 
-
         <script>
             $(function() {
                 var flag = true;
@@ -1369,24 +1368,27 @@
                             $(".louti").fadeOut();
                         }
 
-                        $("#shouye").each(function() {
-                            if (st >= $(this).offset().top) {
-                                var index = $(this).index() + 5;
-                                $(".louti li").eq(index).addClass("hover").siblings().removeClass(
-                                    "hover");
-                            }
-                        })
                     }
                 })
-                $(".louti li:not(:last)").click(function() {
-                    flag = false;
-                    $(this).addClass("hover").siblings().removeClass("hover");
-                    var index = $(this).index();
+                $(".louti li:eq(0)").click(function() {
                     $("html,body").animate({
-                        "scrollTop": $("#shouye").eq(index).offset().top
-                    }, 500, function() {
-                        flag = true;
-                    });
+                        "scrollTop": $(".cont-one").offset().top,
+                    }, 500);
+                })
+                $(".louti li:eq(1)").click(function() {
+                    $("html,body").animate({
+                        "scrollTop": $(".server-a").offset().top,
+                    }, 500);
+                })
+                $(".louti li:eq(2)").click(function() {
+                    $("html,body").animate({
+                        "scrollTop": $(".boom-one").offset().top,
+                    }, 500);
+                })
+                $(".louti li:eq(3)").click(function() {
+                    $("html,body").animate({
+                        "scrollTop": $(".hate-one").offset().top,
+                    }, 500);
                 })
                 $(".louti li:last").click(function() {
                     $("html,body").animate({
@@ -1396,6 +1398,15 @@
 
             })
         </script>
+        <SCript>
+            $(function() {
+                if (localStorage.getItem("yonghu")) {
+                    let denglu = JSON.parse(localStorage.getItem("yonghu"))
+                    $("#denglu").html(denglu)
+                }
+            })
+        </SCript>
+
 </body>
 
 </html>
