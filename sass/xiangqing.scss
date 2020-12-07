@@ -336,15 +336,20 @@
                         text-align: center;
                         background-color: #ccc;
                     }
-                    input:nth-child(4) {
+                    a {
+                        display: inline-block;
                         width: 150px;
                         line-height: 40px;
-                        background-color: red;
-                        color: #fff;
-                        font-size: 18px;
-                        font-weight: 700;
-                        margin-top: 10px;
-                        border: none;
+                        input {
+                            width: 150px;
+                            line-height: 40px;
+                            background-color: red;
+                            color: #fff;
+                            font-size: 18px;
+                            font-weight: 700;
+                            margin-top: 10px;
+                            border: none;
+                        }
                     }
                 }
             }

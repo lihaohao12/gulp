@@ -5,8 +5,158 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>购物车</title>
+    <link rel="stylesheet" href="css/gouwuche.css" />
+    <link rel="stylesheet" href="iconfont/iconfont.css">
 </head>
 
-<body></body>
+<body>
+    <!-- 第一部分#heade -->
+    <div id="heade">
+        <div class="heade-one">
+            <img src="./img/2.jpg" alt="" />
+        </div>
+    </div>
+    <!-- 第二部分#heade-a -->
+    <div id="head-a">
+        <div class="head-a-a">
+            <i class="iconfont icon-dizhi"></i>
+            <span>河南</span>
+            <ul>
+                <li><a href="denglu.html" id="denglu">你好,请登录 </a></li>
+                <li><a href="zhuce.html">免费注册</a><span>|</span></li>
+                <li><a href="">我的订单</a><span>|</span></li>
+                <li class="caidan">
+                    <a href="">我的京东</a><span>|</span>
+                    <ul class="one">
+                        <li>待处理订单</li>
+                        <li>消息</li>
+                        <li>退换货处理</li>
+                        <li>我的问答</li>
+                        <li>降价商品</li>
+                        <li>我的关注</li>
+                    </ul>
+                </li>
+                <li><a href="">京东会员</a><span>|</span></li>
+                <li class="caidan-a">
+                    <a href="">企业采购</a><span>|</span>
+                    <ul class="two">
+                        <li>企业购</li>
+                        <li>商用场景馆</li>
+                        <li>工业品</li>
+                        <li>丰客多商城</li>
+                        <li>礼品卡</li>
+                        <li>微信企业购</li>
+                    </ul>
+                </li>
+                <li><a href="">客户服务</a><span>|</span></li>
+                <li class="caidan-b">
+                    <a href="">网站导航</a><span>|</span>
+                    <ul class="three">
+                        <li>合作招商</li>
+                        <li>京东通信</li>
+                        <li>京东E卡</li>
+                        <li>企业采购</li>
+                        <li>服务市场</li>
+                        <li>办公生活馆</li>
+                        <li>校园加盟</li>
+                        <li>京东社区</li>
+                        <li>游戏社区</li>
+                        <li>知识产权</li>
+                    </ul>
+                </li>
+                <li><a href="">手机京东</a><span>|</span></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 第三部分head-b -->
+    <div id="head-b">
+        <div class="head-b-one">
+            <div class="head-logo"></div>
+            <div class="head-b-two">
+                <div class="head-b-three">
+                    <input type="text" id="txt" />
+                    <span><i class="iconfont icon-sousuo"></i></span>
+                </div>
+                <div class="head-b-five">
+                    <i class="iconfont icon-weibiaoti--"></i>
+                    <a href="">我的购物车</a>
+                </div>
+                <div class="head-b-six">
+                    <img src="./img/3.jpg" alt="" />
+                </div>
+            </div>
+            <div class="head-b-seven">
+                <ul>
+                    <li><a href="">超市大囤货</a></li>
+                    <li><a href="">二手手机</a></li>
+                    <li><a href="">进口美女</a></li>
+                    <li><a href="">运动大牌</a></li>
+                    <li><a href="">居家暖冬</a></li>
+                    <li><a href="">看榜购机</a></li>
+                    <li><a href="">游戏手机</a></li>
+                    <li><a href="">温室大牌</a></li>
+                    <li><a href="">车主福利</a></li>
+                </ul>
+            </div>
+            <div class="head-b-eight">
+                <ul>
+                    <li>
+                        <a href="">秒杀</a>
+                    </li>
+                    <li>
+                        <a href="">优惠券</a>
+                    </li>
+                    <li>
+                        <a href="">PLUS会员</a>
+                    </li>
+                    <li>
+                        <a href="">品牌闪购</a>
+                    </li>
+                    <li>
+                        <a href="">拍卖</a>
+                    </li>
+                    <li>
+                        <a href="">京东家电</a>
+                    </li>
+                    <li>
+                        <a href="">京东超市</a>
+                    </li>
+                    <li>
+                        <a href="">京东生鲜</a>
+                    </li>
+                    <li>
+                        <a href="">京东国际</a>
+                    </li>
+                    <li>
+                        <a href="">京东金融</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="dsst">
+            <input type="checkbox" id="checkAll" />全选
+            <span>商品</span>
+            <span>单价</span>
+            <span>数量</span>
+            <span>小计</span>
+            <span>操作</span>
+        </div>
+        <ul id="carts">
+            <li data-id="10001">
+                <input type="checkbox" class="ck" />
+                <img src="./img/gouwu1.png" />
+                <span>保温杯</span>
+                <span class="price">82.00</span>
+                <span class="minus">减少</span>
+                <input type="text" value="1" class="num" />
+                <span class="plus">增加</span>
+                <span class="numprice">82</span>
+                <span class="detele">删除</span>
+            </li>
+        </ul>
+</body>
 
 </html>
