@@ -1454,7 +1454,7 @@ body {
             }
         }
     }
-    //  第十三部分#deet
+    //  第十三部分#deet(同时作为商品列表页进行展示)
     #deet {
         height: 654px;
         .deet-one {
@@ -1796,6 +1796,44 @@ body {
                         }
                     }
                 }
+            }
+        }
+        .fead-a {
+            width: 1190px;
+            height: 36px;
+            margin: 25px 0;
+            margin: 25px auto;
+            .fead-b,
+            .fead-c,
+            .fead-d,
+            .fead-e,
+            .fead-f,
+            .fead-g {
+                display: inline-block;
+                width: 103px;
+                height: 36px;
+                background-repeat: no-repeat;
+                background-image: url(../img/foot11.png);
+            }
+            .fead-b {
+                background-position: -205px -111px;
+                margin: 0 3px 0 265px;
+            }
+            .fead-c {
+                background-position: -205px -74px;
+            }
+            .fead-d {
+                background-position: -205px -37px;
+            }
+            .fead-e {
+                background-position: -205px 0px;
+            }
+            .fead-f {
+                background-position: 0 -155px;
+            }
+            .fead-g {
+                background-position: -205px -149px;
+                margin: 0 265px 0 0;
             }
         }
     }
