@@ -98,9 +98,12 @@
                 },
                 dataType: "json",
                 success: function(response) {
+                    console.log(response);
                     if (response.code == 1) {
                         alert("登录成功")
                         localStorage.setItem("yonghu", JSON.stringify($("#username").val()))
+                        localStorage.setItem("uid", JSON.stringify(response.data.id)),
+                            localStorage.setItem("token", JSON.stringify(response.data.token))
                         window.location.href = "./index.html";
                     } else {
                         alert("登陆失败")

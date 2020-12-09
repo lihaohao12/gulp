@@ -318,12 +318,13 @@
         }
         #carts {
             width: 1190px;
-            height: 108px;
+            // height: 108px;
             margin: 10px auto;
             border: 1px solid #f0f0f0;
             li {
                 width: 1190px;
                 height: 110px;
+                border: 1px solid #f0f0f0;
                 .ck {
                     width: 12px;
                     height: 12px;
@@ -331,6 +332,8 @@
                     margin-top: 0px;
                 }
                 img {
+                    width: 80px;
+                    height: 80px;
                     margin-left: 60px;
                     margin-top: 15px;
                 }
