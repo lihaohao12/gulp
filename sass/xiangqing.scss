@@ -84,7 +84,7 @@
                 height: 120px;
                 .foyt-two-a {
                     width: 550px;
-                    height: 66px;
+                    line-height: 66px;
                     span {
                         font-size: 16px;
                         line-height: 30px;
@@ -311,17 +311,6 @@
                 width: 480px;
                 height: 670px;
                 float: right;
-                .foyt-six {
-                    width: 480px;
-                    height: 600px;
-                    display: flex;
-                    justify-content: space-around;
-                    flex-wrap: wrap;
-                    img {
-                        width: 240px;
-                        height: 200px;
-                    }
-                }
                 .foyt-seven {
                     width: 480px;
                     height: 60px;

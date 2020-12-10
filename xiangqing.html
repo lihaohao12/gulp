@@ -6,68 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>详情</title>
     <link rel="stylesheet" href="css/xiangqing.css" />
-    <!-- <script src="js/jquery1.11.js"></script>
-    <script src="js/xiangqing.js"></script> -->
+    <script src="js/jquery1.11.js"></script>
+    <script src="js/xiangqing.js"></script>
 </head>
 
 <body>
     <div id="foyt-wrap"></div>
-
-    <script>
-        function $(id) {
-            return document.getElementById(id);
-        }
-
-        function Zoom() {
-            this.zoomBox = $("zoomBox");
-            this.midArea = $("midArea");
-            this.midImg = this.midArea.children[0];
-            this.zoom = $("zoom");
-            this.bigArea = $("bigArea");
-            this.bigImg = this.bigArea.children[0];
-        }
-        Zoom.prototype.start = function() {
-            this.midArea.onmouseover = () => {
-                this.zoom.style.display = "block";
-                this.bigArea.style.display = "block";
-            };
-            this.midArea.onmouseout = () => {
-                this.zoom.style.display = "none";
-                this.bigArea.style.display = "none";
-            };
-            this.midArea.onmousemove = (e) => {
-                let evt = e || event;
-                let x = evt.pageX - this.zoomBox.offsetLeft;
-                let y = evt.pageY - this.zoomBox.offsetTop;
-
-                let l = x - this.zoom.offsetWidth / 2;
-                let t = y - this.zoom.offsetHeight / 2;
-
-                let mw = this.zoomBox.offsetWidth - this.zoom.offsetWidth;
-                let mh = this.zoomBox.offsetHeight - this.zoom.offsetHeight;
-
-                l = l <= 0 ? 0 : l >= mw ? mw : l;
-                t = t <= 0 ? 0 : t >= mh ? mh : t;
-
-                this.zoom.style.left = l + "px";
-                this.zoom.style.top = t + "px";
-
-                this.bigImg.style.left =
-                    (-this.zoom.offsetLeft * this.bigImg.offsetWidth) /
-                    this.midImg.offsetWidth +
-                    "px";
-                this.bigImg.style.top =
-                    (-this.zoom.offsetTop * this.bigImg.offsetHeight) /
-                    this.midImg.offsetHeight +
-                    "px";
-            };
-        };
-
-        let zoom = new Zoom();
-        zoom.start();
-    </script>
-    <script src="js/jquery1.11.js"></script>
-    <script src="js/xiangqing.js"></script>
 </body>
 
 </html>
