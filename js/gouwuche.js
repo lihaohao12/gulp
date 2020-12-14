@@ -3,7 +3,7 @@ $(function() {
     let uid = JSON.parse(localStorage.getItem('uid'))
     console.log(uid);
     $.ajax({
-        url: "http://jx.xuzhixiang.top/ap/api/cart-list.php",
+        url: "http://jx.xuzhixiang.top/ap/api/cart-list.php", //查询购物车商品
         type: "get",
         data: {
             id: uid
@@ -52,7 +52,7 @@ $(function() {
                 num--
 
                 console.log(num);
-                $.get("http://jx.xuzhixiang.top/ap/api/cart-update-num.php", {
+                $.get("http://jx.xuzhixiang.top/ap/api/cart-update-num.php", { //更新购车商品信息
                     uid: uid,
                     pid: pid,
                     pnum: num
